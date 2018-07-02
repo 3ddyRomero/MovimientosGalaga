@@ -1,0 +1,158 @@
+attron(COLOR_PAIR(12));
+        mvprintw(x + 35, y + 1, " ");
+        mvprintw(x + 34, y + 1, " ");
+        mvprintw(x + 34, y + 2, " ");
+        mvprintw(x + 33, y + 1, " ");
+        mvprintw(x + 33, y + 2, " ");
+        mvprintw(x + 33, y + 3, " ");
+        mvprintw(x + 32, y + 1, " ");
+        mvprintw(x + 33, y + 3, " ");
+        mvprintw(x + 33, y + 4, " ");
+        mvprintw(x + 33, y + 5, " ");
+        mvprintw(x + 33, y + 6, " ");
+        mvprintw(x + 33, y + 7, " ");
+        mvprintw(x + 33, y + 8, " ");
+        mvprintw(x + 33, y + 9, " ");
+        mvprintw(x + 33, y + 10, " ");
+        mvprintw(x + 33, y + 11, " ");
+        mvprintw(x + 33, y + 12, " ");
+        mvprintw(x + 32, y + 4, " ");
+        mvprintw(x + 32, y + 5, " ");
+        mvprintw(x + 32, y + 6, " ");
+        mvprintw(x + 32, y + 7, " ");
+        mvprintw(x + 32, y + 8, " ");
+        mvprintw(x + 32, y + 9, " ");
+        mvprintw(x + 31, y + 6, " ");
+        mvprintw(x + 31, y + 7, " ");
+        mvprintw(x + 34, y + 6, " ");
+        mvprintw(x + 34, y + 7, " ");
+
+        //por izquierda
+        mvprintw(x + 35, y + 12, " ");
+        mvprintw(x + 34, y + 11, " ");
+        mvprintw(x + 34, y + 12, " ");
+        mvprintw(x + 32, y + 12, " ");
+
+        attroff(COLOR_PAIR(12));
+        // desactiva el color
+
+        //activa color ROJO para las zonas de ese color
+        attron(COLOR_PAIR(3));
+        mvprintw(x + 31, y + 1, " ");
+        mvprintw(x + 31, y + 12, " ");
+        mvprintw(x + 30, y + 6, " ");
+        mvprintw(x + 30, y + 7, " ");
+        mvprintw(x + 34, y + 5, " ");
+        mvprintw(x + 34, y + 8, " ");
+        attroff(COLOR_PAIR(3));
+        //desactiva el color
+
+        //activa el color AZUL para las zonas de ese color
+        attron(COLOR_PAIR(5));
+        mvprintw(x + 35, y + 6, " ");
+        mvprintw(x + 35, y + 7, " ");
+
+        attroff(COLOR_PAIR(5));
+        //descativa el color
+        key = getch();
+        if (key == 10)
+        {
+            cerrar = false;
+            clear();
+        }
+        else if (key == 'd')
+        {
+            attron(COLOR_PAIR(9));
+            mvprintw(tx + 35, ty + 1, " ");
+            y+=6;
+            refresh();
+            mvprintw(tx + 34, ty + 1, " ");
+            y+=6;
+            mvprintw(tx + 34, ty + 2, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 1, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 2, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 3, " ");
+            y+=6;
+            mvprintw(tx + 32, ty + 1, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 3, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 4, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 5, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 6, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 7, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 8, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 9, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 10, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 11, " ");
+            y+=6;
+            mvprintw(tx + 33, ty + 12, " ");
+            y+=6;
+            mvprintw(tx + 32, ty + 4, " ");
+            y+=6;
+            mvprintw(tx + 32, ty + 5, " ");
+            y+=6;
+            mvprintw(tx + 32, ty + 6, " ");
+            y+=6;
+            mvprintw(tx + 32, ty + 7, " ");
+            y+=6;
+            mvprintw(tx + 32, ty + 8, " ");
+            y+=6;
+            mvprintw(tx + 32, ty + 9, " ");
+            y+=6;
+            mvprintw(tx + 31, ty + 10, " ");
+            y+=6;
+            mvprintw(tx + 31, ty + 11, " ");
+            y+=6;
+            mvprintw(tx + 34, ty + 6, " ");
+            y+=6;
+            mvprintw(tx + 34, ty + 7, " ");
+            y+=6;
+            //por izquierda
+            mvprintw(tx + 35, ty + 12, " ");
+            y+=6;
+            mvprintw(tx + 34, ty + 11, " ");
+            y+=6;
+            mvprintw(tx + 34, ty + 12, " ");
+            y+=6;
+            mvprintw(tx + 32, ty + 12, " ");
+            y+=6;
+            attroff(COLOR_PAIR(9));
+            //desactiva el color
+
+            //activa color ROJO para las zonas de ese color
+            attron(COLOR_PAIR(9));
+            mvprintw(tx + 31, ty + 1, " ");
+            y+=6;
+            mvprintw(tx + 31, ty + 12, " ");
+            y+=6;
+            mvprintw(tx + 30, ty + 6, " ");
+            y+=1;
+            mvprintw(tx + 30, ty + 7, " ");
+            y+=1;
+            mvprintw(tx + 34, ty + 5, " ");
+            y+=1;
+            mvprintw(tx + 34, ty + 8, " ");
+            y+=1;
+            attroff(COLOR_PAIR(9));
+            //desactiva el color
+
+            //activa el color AZUL para las zonas de ese color
+            attron(COLOR_PAIR(9));
+            mvprintw(tx + 35, ty + 6, " ");
+            y+=1;
+            mvprintw(tx + 35, ty + 7, " ");
+            y+=1;
+            attroff(COLOR_PAIR(9));
+
+            refresh();
